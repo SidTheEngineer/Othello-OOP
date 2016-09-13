@@ -31,10 +31,6 @@ public class Board {
         
         // Set the initial state of the board according to the rules
         // of Othello.
-        setBoardInitialState();
-    }
-    
-    private void setBoardInitialState() {
         board[3][3].setDiscColor(Constants.LIGHT);
         board[3][4].setDiscColor(Constants.DARK);
         board[4][3].setDiscColor(Constants.DARK);
