@@ -9,6 +9,7 @@ public class Constants {
     //         the class, so we can use these without instantiation
     public static Color DARK = Color.BLACK;
     public static Color LIGHT = Color.WHITE;
+    public static final Color EMPTY = null;
     public static int PLAYER_ONE = 0;
     public static int PLAYER_TWO = 1;
     public static int ROWS = 8;

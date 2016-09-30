@@ -1,6 +1,7 @@
 package othello;
 
 import core.Game;
+import userInterface.OthelloUi;
 
 public class Othello {
     
@@ -10,6 +11,7 @@ public class Othello {
     // whenever.
     public static void main(String[] args) {
         Game game = new Game();
+        OthelloUi othelloUi = new OthelloUi(game);
     }
     
 }
