@@ -17,6 +17,7 @@ public class Game {
     // that allow you to handle the size of the list inside.
     private ArrayList<Player> players;
     private Board board;
+    private Player currentPlayer;
 
     public Board getBoard() {
         return board;
@@ -37,7 +38,11 @@ public class Game {
     private void initObjects() {
         board = new Board();
         createPlayers();
-        printPlayers();
+        board.setPlayers(players);
+        //printPlayers();
+        players.get(Constants.PLAYER_ONE).setScore(Constants.TWO);
+        players.get(Constants.PLAYER_TWO).setScore(Constants.TWO);
+        currentPlayer = players.get(Constants.PLAYER_ONE);
     }
     
     public void createPlayers() {
@@ -76,5 +81,21 @@ public class Game {
                     + player.getDiscColor()
             );
         });
+    }
+     
+    public Player getCurrentPlayer() {
+        return currentPlayer;
+    }
+
+    public void setCurrentPlayer(Player currentPlayer) {
+        this.currentPlayer = currentPlayer;
+    }
+    
+    public void calculateScore() {
+       // board.calculateScore();
+        
+        //Update the score for each player.
+        //players.get(Constants.PLAYER_ONE).setScore(board.getDarkCount());
+        //players.get(Constants.PLAYER_TWO).setScore(board.getLightCount());
     }
 }

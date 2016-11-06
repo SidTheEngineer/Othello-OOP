@@ -1,8 +1,6 @@
 package userInterface;
 
 import core.Game;
-import userInterface.GameUi;
-import userInterface.BoardUi;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import javax.swing.JFrame;
@@ -15,7 +13,6 @@ public class OthelloUi extends JFrame {
     
     public OthelloUi(Game game) {
         this.game = game;
-        
         // Create components and put them in JFrame upon class
         // instantiation.
         initComponents();
@@ -29,8 +26,8 @@ public class OthelloUi extends JFrame {
         // UI is closed via X.
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
-        gameUi = new GameUi();
-        boardUi = new BoardUi();
+        gameUi = new GameUi(game);
+        boardUi = new BoardUi(game, gameUi);
         
         // By default, JFrame uses BorderLayout as its LayoutManager,
         // which is responsible for managing how UI components are placed

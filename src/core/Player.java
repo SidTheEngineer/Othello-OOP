@@ -6,6 +6,7 @@ public class Player {
     
     private String name;
     private Color discColor;
+    private int score;
 
     public String getName() {
         return name;
@@ -21,6 +22,14 @@ public class Player {
 
     public void setDiscColor(Color discColor) {
         this.discColor = discColor;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
     }
     
     
