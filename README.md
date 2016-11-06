@@ -1,3 +1,6 @@
 #Othello
 
-This is a Java project we will be working on in COP3330 Object Oriented Programming. Once finished, it should be a working version of the game Othello and a great example of OOP in Java. 
+This is a rendition of the popular board game Othello, created in Java exhibiting Object Oriented Programming practices.
+
+<img src="http://i.imgur.com/WUC1FfV.png" height="400" width="400"></img><img src="http://i.imgur.com/qzpnAgx.png" height="400" width="400"></img>
+ 
